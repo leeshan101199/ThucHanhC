@@ -1,8 +1,6 @@
 #include <iostream>
 #include <conio.h>
-
 using namespace std;
-
 class employee{
  private:
   int emp_num;
@@ -11,7 +9,7 @@ class employee{
   void entData(){
    cout << "Enter Employee\'s Number ";
    cin >> emp_num;
-   cout << "Enter Employee\'s Salary " ;
+   cout << "Enter Employee\'s Compensation " ;
    cin >> emp_comp;
   }
   void display(){
@@ -19,9 +17,7 @@ class employee{
    cout << "Enployee\'s Salary " << emp_comp << endl;
   }
 };
-
 int main(){
- 
  employee emp1, emp2, emp3;
  cout << "Enter Data For Employee 1" << endl;
  emp1.entData();
@@ -29,9 +25,11 @@ int main(){
  emp2.entData();
  cout << "Enter Data For Employee 3" << endl;
  emp3.entData();
- cout << "Total Data Entered Is" << endl;
+ cout << "Total Data Entered Is Below" << endl;
+ cout << "+ Data of Employee 1" << endl;
  emp1.display();
+ cout << "+ Data of Employee 2" << endl;
  emp2.display();
+ cout << "+ Data of Employee 3" << endl;
  emp3.display();
- 
 }
