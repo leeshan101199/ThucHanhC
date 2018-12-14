@@ -13,7 +13,7 @@ counter()
        }
 void show()
        {
-              cout<<"I am Oject "<<num<<"\n";
+              cout<<"My Serial Number is "<<num<<"\n";
        }
 };
 int main()
